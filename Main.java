@@ -45,8 +45,12 @@ public class Main {
         list3.printList();
         
         
-        System.out.println("\n=== UC 7: Search for value 30 ===");
+        System.out.println("\nUC 7: Search for value 30 ");
         System.out.println("Found 30? " + list3.search(30));
+        
+        System.out.println("\nUC 8: Insert 40 after 30 ");
+        list3.insertAfter(30, 40);
+        list3.printList();
 	}
 	
 }
