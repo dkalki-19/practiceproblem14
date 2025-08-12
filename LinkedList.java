@@ -38,7 +38,22 @@ public class LinkedList<T extends Comparable<T>> {
 	}
 	
 	
+	//use case 4 - > inserting element after the specified element
 	
+	public void insertAfter(T key,T data) {
+		
+		Node current  = head;
+		while(current!=null && !current.data.equals(key) ) {
+			current = current.next;
+		}
+		if(current!=null) {
+			Node<T> newNode = new Node<>(data);
+			newNode.next = current.next;
+			current.next = newNode;
+			if(current==tail) tail = newNode;
+			size++;
+		}
+	}
 	
 	
 

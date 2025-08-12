@@ -22,6 +22,13 @@ public class Main {
         list3.append(30);
         list3.append(70);
         list3.printList();
+        
+        System.out.println("\n=== UC 4: Insert 30 between 56 and 70 ===");
+        list3 = new LinkedList<>();
+        list3.append(56);
+        list3.append(70);
+        list3.insertAfter(56, 30);
+        list3.printList();
 	}
 	
 }
