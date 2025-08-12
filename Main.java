@@ -34,6 +34,15 @@ public class Main {
         System.out.println("\n UC 5: Delete first element ");
         list3.pop();
         list3.printList();
+        
+        
+        System.out.println("\nUC 6: Delete last element ");
+        list3 = new LinkedList<>();
+        list3.append(56);
+        list3.append(30);
+        list3.append(70);
+        list3.popAtEnd();
+        list3.printList();
 	}
 	
 }

@@ -65,8 +65,28 @@ public class LinkedList<T extends Comparable<T>> {
 		}
 	}
 	
+	// uc6 => Deleting at end
 	
+	public void popAtEnd() {
+		if(head==null) {
+			return ;
+		}
+		if(head==tail){
+			head = tail = null;
+		}
+		else {
+			Node current = head;
+			while(current.next!=tail) {
+				current = current.next;
+			}
+			current.next = null;
+			tail = current;
+		}
+		size--;
+		
+	}
 
+	
 	public void printList() {
 		
 		Node<T> current = head;
