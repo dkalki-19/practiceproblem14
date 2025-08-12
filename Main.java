@@ -15,6 +15,13 @@ public class Main {
         list2.addFront(30);
         list2.addFront(56);
         list2.printList();
+        
+        System.out.println("\nUC 3: Appending at the end as normal appending ");
+        LinkedList<Integer> list3 = new LinkedList<>();
+        list3.append(56);
+        list3.append(30);
+        list3.append(70);
+        list3.printList();
 	}
 	
 }
