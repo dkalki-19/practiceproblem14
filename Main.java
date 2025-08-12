@@ -8,6 +8,13 @@ public class Main {
 		l1.append(30);
 		l1.append(70);
 		l1.printList(); 
+		
+		System.out.println("\nUC 2: Add 30 and 56 to front of 70 ");
+        LinkedList<Integer> list2 = new LinkedList<>();
+        list2.addFront(70);
+        list2.addFront(30);
+        list2.addFront(56);
+        list2.printList();
 	}
 	
 }
