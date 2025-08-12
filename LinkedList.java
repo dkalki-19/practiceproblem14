@@ -56,6 +56,16 @@ public class LinkedList<T extends Comparable<T>> {
 	}
 	
 	
+	// uc5 => Deleting at front
+	
+	public void pop() {
+		if(head!=null) {
+			head.next = null;
+			size--;
+		}
+	}
+	
+	
 
 	public void printList() {
 		
