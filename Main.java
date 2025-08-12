@@ -43,6 +43,10 @@ public class Main {
         list3.append(70);
         list3.popAtEnd();
         list3.printList();
+        
+        
+        System.out.println("\n=== UC 7: Search for value 30 ===");
+        System.out.println("Found 30? " + list3.search(30));
 	}
 	
 }

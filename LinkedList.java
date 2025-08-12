@@ -87,6 +87,19 @@ public class LinkedList<T extends Comparable<T>> {
 	}
 
 	
+	//uc7 => Find the element with the given key
+	
+	public boolean search(T key) {
+		
+		Node current = head;
+		while(current!=null) {
+			if(current.data.equals(key)) return true;
+			current = current.next;
+		}
+		return false;
+		
+	}
+	
 	public void printList() {
 		
 		Node<T> current = head;
