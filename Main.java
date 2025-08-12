@@ -7,7 +7,7 @@ public class Main {
 		l1.append(50);
 		l1.append(30);
 		l1.append(70);
-		l1.printList();
+		l1.printList(); 
 	}
 	
 }
