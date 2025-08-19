@@ -56,6 +56,16 @@ public class Main {
         list3.delete(40);
         list3.printList();
         System.out.println("Size = " + list3.size());
+        
+        System.out.println("\nUC10: Add elements in sorted order");
+        LinkedList<Integer> sortedList = new LinkedList<>();
+        sortedList.addSorted(56);
+        sortedList.addSorted(30);
+        sortedList.addSorted(40);
+        sortedList.addSorted(70);
+        sortedList.printList();
+        
+        
 	}
 	
 }
