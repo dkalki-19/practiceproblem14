@@ -6,7 +6,6 @@ public class LinkedList<T extends Comparable<T>> {
 	private Node<T> tail;
 	int size = 0;
 	
-	
 	//use case 1 -> adding data at end
 	public void append(T data) {
 		
@@ -100,6 +99,36 @@ public class LinkedList<T extends Comparable<T>> {
 		
 	}
 	
+	 public void delete(T key) {
+        if (head == null) return;
+
+        if (head.data.equals(key)) {
+            head = head.next;
+            return;
+        }
+
+        Node<T> temp = head;
+        while (temp.next != null && !temp.next.data.equals(key)) {
+            temp = temp.next;
+        }
+
+        if (temp.next != null) {
+            temp.next = temp.next.next;
+        }
+    }
+
+    // UC9 =>  Size of list
+    public int size() {
+        int count = 0;
+        Node<T> temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+	
 	public void printList() {
 		
 		Node<T> current = head;
@@ -109,6 +138,6 @@ public class LinkedList<T extends Comparable<T>> {
 			current = current.next;
 		}
 	}
-	
+
 	
 }

@@ -51,6 +51,11 @@ public class Main {
         System.out.println("\nUC 8: Insert 40 after 30 ");
         list3.insertAfter(30, 40);
         list3.printList();
+        
+        System.out.println("\nUC9: Delete 40 and show size");
+        list3.delete(40);
+        list3.printList();
+        System.out.println("Size = " + list3.size());
 	}
 	
 }
