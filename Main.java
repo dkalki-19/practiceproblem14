@@ -85,6 +85,16 @@ public class Main {
         }
         
         
+     // ---------------- Queue Use Cases ----------------
+        System.out.println("\n=== Queue Use Cases ===");
+        Queue<Integer> queue = new Queue<>();
+
+        System.out.println("\nUC3: Enqueue 56, 30, 70");
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
+        queue.printQueue(); // 56 -> 30 -> 70
+        
         
 	}
 	
