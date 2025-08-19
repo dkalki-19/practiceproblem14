@@ -77,6 +77,14 @@ public class Main {
         stack.printStack(); // Top -> 56 -> 30 -> 70
         
         
+        System.out.println("\nUC2: Peek and Pop all elements");
+        while (!stack.isEmpty()) {
+            System.out.println("Top: " + stack.peek());
+            System.out.println("Popped: " + stack.pop());
+            stack.printStack();
+        }
+        
+        
         
 	}
 	
