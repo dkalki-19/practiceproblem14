@@ -2,8 +2,8 @@ package day14practicesession.practiceproblem14;
 
 public class LinkedList<T extends Comparable<T>> {
 
-	private Node<T> head;
-	private Node<T> tail;
+	 public Node<T> head;
+	 public Node<T> tail;
 	int size = 0;
 	
 	//use case 1 -> adding data at end
@@ -57,12 +57,12 @@ public class LinkedList<T extends Comparable<T>> {
 	
 	// uc5 => Deleting at front
 	
-	public void pop() {
-		if(head!=null) {
-			head.next = null;
-			size--;
-		}
-	}
+	public T pop() {
+        if (head == null) return null;
+        T value = head.data;
+        head = head.next;
+        return value;
+    }
 	
 	// uc6 => Deleting at end
 	

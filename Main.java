@@ -66,6 +66,18 @@ public class Main {
         sortedList.printList();
         
         
+     // ---------------- Stack Use Cases ----------------
+        System.out.println("\n=== Stack Use Cases ===");
+        Stack<Integer> stack = new Stack<>();
+
+        System.out.println("\nUC1: Push 70, 30, 56");
+        stack.push(70);
+        stack.push(30);
+        stack.push(56);
+        stack.printStack(); // Top -> 56 -> 30 -> 70
+        
+        
+        
 	}
 	
 }
