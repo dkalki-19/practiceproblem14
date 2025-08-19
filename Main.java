@@ -95,6 +95,12 @@ public class Main {
         queue.enqueue(70);
         queue.printQueue(); // 56 -> 30 -> 70
         
+        System.out.println("\nUC4: Dequeue all elements");
+        while (!queue.isEmpty()) {
+            System.out.println("Dequeued: " + queue.dequeue());
+            queue.printQueue();
+        }
+        
         
 	}
 	
